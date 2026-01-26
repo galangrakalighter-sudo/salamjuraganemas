@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salam Juragan Emas - Jual Beli Emas Terpercaya Bekasi</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="{{ asset('logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('storage/logo.png') }}">
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            screens: {
+            'xs': '360px', // Menambahkan breakpoint baru mulai dari 360px
+            'xss': '52px', // Menambahkan breakpoint baru mulai dari 360px
+            }
+        }
+        }
+    }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
@@ -60,7 +72,7 @@
     <nav class="bg-dark text-white fixed top-0 left-0 w-full z-50 shadow-lg">
         <div class="container mx-auto px-4 py-3 md:py-4 flex justify-between items-center relative">
             <div class="flex items-center z-10 shrink-0">
-                <img src="{{ asset('logo.png') }}" alt="Logo Salam Juragan Emas" class="h-10 md:h-16 lg:h-20 w-auto object-contain">
+                <img src="{{ asset('storage/logo.png') }}" alt="Logo Salam Juragan Emas" class="h-10 md:h-16 lg:h-20 w-auto object-contain">
             </div>
 
             <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-6 lg:space-x-8 text-xs lg:text-sm font-semibold">
@@ -91,7 +103,7 @@
         </div>
     </nav>
 
-    <section id="beranda" class="relative bg-dark text-white overflow-hidden py-10 md:py-20">
+    <section id="beranda" class="md:mt-[-1%] sm:mt-[-1%] xs:mt-[-2%] xss:mt-[-12%] relative bg-dark text-white overflow-hidden py-10 md:py-20">
         <div class="container mx-auto px-4 flex flex-col items-center">
             <div class="w-full lg:w-3/4 z-10 text-center">
                 <p class="text-gold font-bold tracking-widest mb-4 uppercase text-[10px] sm:text-xs md:text-2xl">Transparan • Cepat • Amanah • Tanpa Ribet</p>
@@ -111,15 +123,15 @@
                         <h2 class="text-xl md:text-4xl font-serif font-bold text-gold miring-manual playfair">"Emas Anda, Amanah Kami"</h2>
                         <p class="text-white mt-2 text-xs md:text-base inter">Marakas Square, Bekasi Utara</p>
                     </div>
-                    <div class="w-40 md:w-72 shrink-0 md:mb-[-6%] lg:mb-[-6%]">
-                        <img src="{{ asset('orang.png') }}" alt="Juragan Emas" class="w-full h-auto rounded-lg shadow-2xl drop-shadow-2xl">
+                    <div class="w-40 md:w-72 xs:mb-[-12%] sm:mb-[-6.5%] md:mb-[-10.8%] lg:mb-[-10.6%] xl:mb-[-8%]">
+                        <img src="{{ asset('storage/orang.webp') }}" alt="Juragan Emas" class="w-full h-auto bg-dark">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="harga_emas" class="py-12 md:py-20 bg-white">
+    <section id="harga_emas" class="py-12 md:py-20">
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="text-center mb-10">
                 <h2 class="text-2xl md:text-5xl font-bold mb-2 uppercase playfair leading-tight">Harga Emas Update Setiap Hari</h2>
@@ -157,7 +169,7 @@
                 <p class="mt-2 text-[10px] md:text-xl text-gray-500 uppercase tracking-widest inter">Cek Harga terbaru Anda hanya di Salam Juragan Emas</p>
             </div>
             
-            <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden table-container">
+            <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden table-container overflow-x-auto">
                 <table class="w-full text-left min-w-[500px] md:min-w-full">
                     <thead class="bg-dark text-white">
                         <tr>
@@ -320,7 +332,7 @@
                 <p class="text-black font-bold text-[10px] md:text-lg mb-10 uppercase tracking-widest miring-manual leading-relaxed">
                     Proses Cepat • Timbangan Akurat • Dana cair detik itu juga
                 </p>
-                <a href="https://wa.me/6281234567890" target="_blank" class="bg-black text-white font-bold px-6 md:px-12 py-3 md:py-4 rounded-full inline-block hover:scale-105 transition shadow-xl text-sm md:text-lg uppercase">
+                <a href="https://wa.me/6285210541006" target="_blank" class="bg-black text-white font-bold px-6 md:px-12 py-3 md:py-4 rounded-full inline-block hover:scale-105 transition shadow-xl text-sm md:text-lg uppercase">
                     HUBUNGI WHATSAPP ADMIN
                 </a>
                 <p class="text-black font-bold text-[9px] md:text-sm mt-6 uppercase tracking-widest">Klik tombol diatas untuk langsung chat</p>
@@ -342,11 +354,17 @@
                 </div>
 
                 <div class="flex flex-col space-y-4">
-                    <a href="#" class="flex items-center text-[#CBA337] hover:text-white transition text-sm md:text-3xl font-medium playfair miring-manual">
+                    <a href="https://www.tiktok.com/@salamjuraganemas" target="_blank" class="flex items-center text-[#CBA337] hover:text-white transition text-sm md:text-3xl font-medium playfair miring-manual">
+                        <i class="fab fa-tiktok mr-3 text-lg md:text-2xl"></i> salamjuraganemas
+                    </a>
+                    <a href="https://www.facebook.com/share/16q53CQXRX/" target="_blank" class="flex items-center text-[#CBA337] hover:text-white transition text-sm md:text-3xl font-medium playfair miring-manual">
+                        <i class="fab fa-facebook mr-3 text-lg md:text-2xl"></i> Salam -JuraganEmas
+                    </a>
+                    <a href="https://www.instagram.com/salamjuraganemas?igsh=MWNveHo1bmhkZm0yNg==" target="_blank" class="flex items-center text-[#CBA337] hover:text-white transition text-sm md:text-3xl font-medium playfair miring-manual">
                         <i class="fab fa-instagram mr-3 text-lg md:text-2xl"></i> @salamjuraganemas
                     </a>
-                    <a href="#" class="flex items-center text-[#CBA337] hover:text-white transition text-sm md:text-3xl font-medium playfair miring-manual">
-                        <i class="fab fa-tiktok mr-3 text-lg md:text-2xl"></i> @salamjuraganemas
+                    <a href="https://wa.me/6285210541006" target="_blank" class="flex items-center text-[#CBA337] hover:text-white transition text-sm md:text-3xl font-medium playfair miring-manual">
+                        <i class="fas fa-phone mr-3 text-lg md:text-2xl"></i> 085210541006
                     </a>
                 </div>
             </div>
